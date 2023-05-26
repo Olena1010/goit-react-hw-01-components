@@ -16,5 +16,5 @@ export const FriendList = ({ friends }) => {
 </List>
 }
 FriendList.propTypes = {
-    id:PropTypes.number.isRequired
+    id:PropTypes.number,
 }

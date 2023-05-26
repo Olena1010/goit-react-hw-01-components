@@ -1,3 +1,5 @@
+import { GlobalStyle } from "./GlobalStyle";
+
 import { Profile } from "./Profile/Profile";
 import user from "user.json";
 
