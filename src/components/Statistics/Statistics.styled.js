@@ -9,15 +9,14 @@ border-radius: 6px;
 display: flex;
 flex-direction: column;
 background-color: #ffffff;
-text-aling: center;
-box-shadow: 10px 10px 5px 0px rgba (0,0,0,0.75);
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.75) 10px 10px 5px 0px;
 `;
 
 export const Title = styled.h2`
 height: 100px;
 margin:0;
 margin-top: 5%;
-text-shadow: 7px 5px 3 px rgba (0,0,0,0.33);
 `;
 
 export const StatsList = styled.ul`

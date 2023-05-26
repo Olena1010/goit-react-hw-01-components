@@ -10,7 +10,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       className="avatar"
     />
             <Name>{username}</Name>
-            <Tag>{tag}</Tag>
+            <Tag>@{tag}</Tag>
             <Location>{location}</Location>
   </Description>
 

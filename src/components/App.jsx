@@ -1,4 +1,5 @@
 import { GlobalStyle } from "./GlobalStyle";
+import {Container} from "./Container"
 
 import { Profile } from "./Profile/Profile";
 import user from "user.json";
@@ -16,20 +17,26 @@ import transactions from 'transactions.json';
 
 export const App = () => {
   return (
+  <Container>
+    <GlobalStyle/>
     <div>
-      
       <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-      />
-   
-      <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
-    </div>
-    
+        />
+   </div>
+   <div>
+          <Statistics title="Upload stats" stats={data} />
+   </div>
+    <div>   
+          <FriendList friends={friends} />
+    </div> 
+    <div>    
+          <TransactionHistory items={transactions} />
+    </div>   
+  </Container>
   );
 };

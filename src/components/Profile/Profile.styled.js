@@ -10,23 +10,25 @@ display: flex;
 flex-direction: column;
 background-color: #ffffff;
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 `;
 
 export const Description = styled.div`
 width: 100%;
 height: 380px;
-text-aling: center;
+text-align: center;
 padding: 20px;
-color: gray:
+color: gray;
 font-size: medium;
 font-weight: 400;
+
 `;
 
 export const Img = styled.img`
-display: block;
+background-color: grey;
+border-radius: 50%;
+padding: 10px;
 width: 100%;
-height: auto;
-margin: 0;
 `;
 
 export const Name = styled.p`
@@ -63,6 +65,7 @@ export const StatsItem = styled.li`
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 margin: 0;
 height: 100%;
 width: 100%;
@@ -76,6 +79,7 @@ border-right: 2px solid #757578;
 &:last-child {
     border-bottom-right-radius: 6px;
 }
+
 & span:first-child{
     color: gray;
 }
