@@ -3,7 +3,7 @@ import{ Card, Title, StatsList, StatsItem } from './Statistics.styled'
 
 export const Statistics = ({ title, stats }) => {
     return <Card>
-        <Title>{title}</Title>
+        {title && <Title>{title}</Title>}
 
         <StatsList>
             {stats.map(data => (

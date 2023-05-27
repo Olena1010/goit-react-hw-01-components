@@ -6,15 +6,24 @@ import { List } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
     return <List>
-        {friends.map(item => (
-            <FriendListItem key={item.id}
-                avatar={item.avatar}
-                name={item.name}
-                isOnline={item.isOnline}
+        {friends.map(({ id, avatar, name, isOnline })=> (
+            <FriendListItem
+                key={id}
+                avatar={avatar}
+                name={name}
+                isOnline={isOnline}
             />
  ))}
-</List>
+    </List>
+    
 }
 FriendList.propTypes = {
-    id:PropTypes.number,
-}
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    })
+  ).isRequired,
+};
